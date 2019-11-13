@@ -10,4 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Initial setup of project.
 
 Add basic api todo calls to add, list, complete, and delete items from the list.
+
 https://manage.auth0.com/dashboard/eu/dev-vqn41l5l/apis/5dcad3b0979a0c07e42d53ff/quickstart
+
+Got part way through, then hit a problem with authentication tokens. Sigh.
