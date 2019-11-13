@@ -15,3 +15,14 @@
 # vendor/
 /.env
 /auth0/get_creds
+
+# From Vue.gitignore
+.DS_Store
+Thumbs.db
+db.json
+*.log
+node_modules/
+public/
+.deploy*/
+src/_drafts
+package-lock.json

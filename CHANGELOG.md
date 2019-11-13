@@ -8,3 +8,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 Initial setup of project with a confirmation it ran and check for the `.env` configuration file.
+
+Added a basic vue app.
