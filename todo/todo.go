@@ -2,13 +2,13 @@ package todo
 
 import (
 	"errors"
-	"sync"
 	"github.com/rs/xid"
+	"sync"
 )
 
 var (
 	list []Todo
-	mtx sync.RWMutex
+	mtx  sync.RWMutex
 	once sync.Once
 )
 
@@ -17,17 +17,16 @@ func Init() {
 	once.Do(initialiseList)
 }
 
-func initialiseList(){
+func initialiseList() {
 	list = []Todo{}
 }
 
 // Todo is a structure
 type Todo struct {
-	ID string `json:"id"`
-	Message string `json:"message"`
-	Complete bool `json:"complete"`
+	ID       string `json:"id"`
+	Message  string `json:"message"`
+	Complete bool   `json:"complete"`
 }
-
 
 // Get gets a todo list
 func Get() []Todo {
@@ -36,7 +35,7 @@ func Get() []Todo {
 
 // Add will add a new todo based on a message
 func Add(message string) string {
-	t:= newTodo(message)
+	t := newTodo(message)
 	mtx.Lock()
 	list = append(list, t)
 	mtx.Unlock()
@@ -45,8 +44,8 @@ func Add(message string) string {
 
 // Delete will remove a todo based on a message
 func Delete(id string) error {
-	location, err:= findTodoLocation(id)
-	if err!= nil{
+	location, err := findTodoLocation(id)
+	if err != nil {
 		return err
 	}
 
@@ -56,8 +55,8 @@ func Delete(id string) error {
 
 // Complete will set the complete boolean to true, marking a todo as complete
 func Complete(id string) error {
-	location, err:= findTodoLocation(id)
-	if err!= nil {
+	location, err := findTodoLocation(id)
+	if err != nil {
 		return err
 	}
 
@@ -66,9 +65,9 @@ func Complete(id string) error {
 }
 
 func newTodo(msg string) Todo {
-	return Todo {
-		ID: xid.New().String(),
-		Message: msg,
+	return Todo{
+		ID:       xid.New().String(),
+		Message:  msg,
 		Complete: false,
 	}
 }
@@ -76,8 +75,8 @@ func newTodo(msg string) Todo {
 func findTodoLocation(id string) (int, error) {
 	mtx.RLock()
 	defer mtx.RUnlock()
-	for i,t := range list {
-		if isMatchingID(t.ID, id){
+	for i, t := range list {
+		if isMatchingID(t.ID, id) {
 			return i, nil
 		}
 	}
@@ -91,7 +90,7 @@ func removeElementByLocation(i int) {
 	mtx.Unlock()
 }
 
-func setTodoCompleteByLocation(location int){
+func setTodoCompleteByLocation(location int) {
 	mtx.Lock()
 	list[location].Complete = true
 	mtx.Unlock()
