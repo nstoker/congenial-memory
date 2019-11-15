@@ -27,3 +27,6 @@ This may need to be revisited to set the `{DOMAIN}` and `{CLIENT_ID}` values fro
 About to start [Define Your Go REST API Entry Point](https://developer.okta.com/blog/2018/10/23/build-a-single-page-app-with-go-and-vue#define-your-go-rest-api-entry-point).
 
 About to start [Manage Dependancies](https://developer.okta.com/blog/2018/10/23/build-a-single-page-app-with-go-and-vue#manage-dependencies).
+Actually ignored this section, as the `go mod` is replacing the dep tool.
+
+About to start [Run the GO + Vue SPA](https://developer.okta.com/blog/2018/10/23/build-a-single-page-app-with-go-and-vue#run-the-go--vue-spa).
