@@ -25,3 +25,5 @@ About to start [Verify JSON Web Tokens with Go](https://developer.okta.com/blog/
 This may need to be revisited to set the `{DOMAIN}` and `{CLIENT_ID}` values from the environment.
 
 About to start [Define Your Go REST API Entry Point](https://developer.okta.com/blog/2018/10/23/build-a-single-page-app-with-go-and-vue#define-your-go-rest-api-entry-point).
+
+About to start [Manage Dependancies](https://developer.okta.com/blog/2018/10/23/build-a-single-page-app-with-go-and-vue#manage-dependencies).
