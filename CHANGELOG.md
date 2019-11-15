@@ -16,3 +16,5 @@ Added a number of vue requirements.
 Completed the vue part of [Create Your Vue App Routes](https://developer.okta.com/blog/2018/10/23/build-a-single-page-app-with-go-and-vue#create-your-vue-app-routes).
 
 About to start [Create a REST API with Go](https://developer.okta.com/blog/2018/10/23/build-a-single-page-app-with-go-and-vue#create-a-rest-api-with-go).
+
+About to start [Add the Go Backend](https://developer.okta.com/blog/2018/10/23/build-a-single-page-app-with-go-and-vue#add-the-go-backend).
