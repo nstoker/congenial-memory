@@ -28,8 +28,8 @@ func (s Service) GetKudos() ([]*core.Kudo, error) {
 }
 
 // CreateKudoFor yes
-func (s Service) CreateKudoFor(gitHubRepo GitHubRepo) (*core.Kudo, error) {
-	kudo := s.gitHubRepoToKudo(githubRepo)
+func (s Service) CreateKudoFor(githubRepo GitHubRepo) (*core.Kudo, error) {
+	kudo := s.githubRepoToKudo(githubRepo)
 	err := s.repo.Create(kudo)
 	if err != nil {
 		return nil, err
