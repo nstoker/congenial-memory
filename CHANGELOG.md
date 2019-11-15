@@ -21,5 +21,7 @@ About to start [Add the Go Backend](https://developer.okta.com/blog/2018/10/23/b
 
 About to start [Define Go HTTP Handlers](https://developer.okta.com/blog/2018/10/23/build-a-single-page-app-with-go-and-vue#define-go-http-handlers).
 
-
 About to start [Verify JSON Web Tokens with Go](https://developer.okta.com/blog/2018/10/23/build-a-single-page-app-with-go-and-vue#verify-json-web-tokens-jwts-with-go).
+This may need to be revisited to set the `{DOMAIN}` and `{CLIENT_ID}` values from the environment.
+
+About to start [Define Your Go REST API Entry Point](https://developer.okta.com/blog/2018/10/23/build-a-single-page-app-with-go-and-vue#define-your-go-rest-api-entry-point).
