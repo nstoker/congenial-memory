@@ -1,4 +1,4 @@
-MONGO_URL=mongodb://mongo_user:mongo_secret@0.0.0.0:27017/kudos
+MONGO_URL=mongodb://mongo_user:mongo_secret@0.0.0.0:27017
 PORT=:4444
 REPO=github.com/nstoker/congenial-memory
 

@@ -30,3 +30,7 @@ About to start [Manage Dependancies](https://developer.okta.com/blog/2018/10/23/
 Actually ignored this section, as the `go mod` is replacing the dep tool.
 
 About to start [Run the GO + Vue SPA](https://developer.okta.com/blog/2018/10/23/build-a-single-page-app-with-go-and-vue#run-the-go--vue-spa).
+
+Fix errors in vue implementation.
+
+Fix authentication issue for the mongodb container.
